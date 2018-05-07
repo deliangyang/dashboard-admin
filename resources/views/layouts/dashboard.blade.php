@@ -1399,5 +1399,12 @@
 
 <!-- PAGE SCRIPTS -->
 <script src="{{ asset('asset/js/pages/dashboard2.js') }}"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".sidebar").niceScroll();
+        $("body").niceScroll();
+        $("html").niceScroll();
+    });
 </body>
 </html>

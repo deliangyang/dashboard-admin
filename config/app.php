@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'copyright' => env('APP_COPYRIGHT', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

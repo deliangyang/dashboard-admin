@@ -34,3 +34,10 @@ Route::get('/test', function () {
 
     $owner->attachPermission($createPost);
 });
+
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
+    Route::resources([
+        'role' => 'RoleController',
+        'permission' => 'PermissionController',
+    ]);
+});

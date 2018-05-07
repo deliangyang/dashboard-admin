@@ -32,17 +32,6 @@
     @include('components.admin.footer')
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="{{ asset('asset/js/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('asset/js/adminlte.js') }}"></script>
-<script src="{{ asset('asset/js/demo.js') }}"></script>
-<script src="https://cdn.bootcss.com/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
-{{--<script src="https://cdn.bootcss.com/jvectormap/1.2.2/jquery-jvectormap.min.js"></script>
-<script src="{{ asset('asset/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js') }}"></script>--}}
-<script src="https://cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
-<script src="https://cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
-{{--
-<script src="{{ asset('asset/js/pages/dashboard2.js') }}"></script>
---}}
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script type="text/javascript">
     $(function () {
@@ -51,6 +40,12 @@
         $("html").niceScroll();
     });
 </script>
+<script src="{{ asset('asset/js/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('asset/js/adminlte.js') }}"></script>
+<script src="{{ asset('asset/js/demo.js') }}"></script>
+<script src="https://cdn.bootcss.com/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+<script src="https://cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+<script src="https://cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
 @stack('script')
 </body>
 </html>

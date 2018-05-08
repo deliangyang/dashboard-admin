@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\PermissionRequest;
 use App\Model\Permission;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -66,13 +67,15 @@ class PermissionController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  PermissionRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PermissionRequest $request, $id)
     {
-        //
+        $permission = Permission::find($id);
+        $permission->fillable($request->all());
+        $permission->save();
     }
 
     /**
@@ -83,6 +86,6 @@ class PermissionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Permission::find($id)->delete();
     }
 }

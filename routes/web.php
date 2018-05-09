@@ -39,5 +39,6 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::resources([
         'role' => 'RoleController',
         'permission' => 'PermissionController',
+        'menu' => 'MenuController',
     ]);
 });
